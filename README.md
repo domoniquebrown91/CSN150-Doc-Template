@@ -18,7 +18,10 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 ##### AI GPTs used
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
+1. download and install arduino from website
+2. add the esp32 board URL (go to file>preferences and paste link into the additional boards manager URLs field and click OK
+3. go to tools>board>boards manager, search for esp32 and install esp32 by espressif systems.
+ 
 
 ## Problems and Solutions
 Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
