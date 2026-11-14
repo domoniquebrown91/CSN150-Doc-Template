@@ -1,8 +1,8 @@
 # Cybersecurity : CSN150
-Project: ESP32 XXXXXXXX
+Project: ESP32 Camera
 
 ## Purpose
-Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
+Set up ESP32 camera successfully
 
 ## Equipment
 * [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
@@ -18,20 +18,21 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 ##### AI GPTs used
 
 ## Steps I followed
-1. download and install arduino from website
-2. add the esp32 board URL (go to file>preferences and paste link into the additional boards manager URLs field and click OK
-3. go to tools>board>boards manager, search for esp32 and install esp32 by espressif systems.
+1. navigate to file>examples>esp32>camera>camerawebServer in arduino
+2. enter wifi credentials
+3. click upload
+4. after upload appears to be successful, open serial monitor tools>serial monitor
+5. Problem: after opening serial monitor, arduino appears to freeze and become unresponsive
+6. Close arduino and Press reset button on board
+
  
 
 ## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
+Problem: after opening serial monitor, arduino appears to freeze and become unresponsive  
 
-**Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
-Camera init failed with error 0x105
+
 **Solution:**
 
-### Example Problem
-**Problem:** Arduino code will not load on ESP32 Cam.
-**Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
+
 
 ## Final Report
