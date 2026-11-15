@@ -24,15 +24,23 @@ Set up ESP32 camera successfully
 4. after upload appears to be successful, open serial monitor tools>serial monitor
 5. Problem: after opening serial monitor, arduino appears to freeze and become unresponsive
 6. Close arduino and Press reset button on board
+7. select board_config.h tab and comment esp_eye and uncomment AI THINKER
+8. press upload, wait for code to load
+9. go to tools and select serial monitor
+10. hit reset button on esp32cam
+11. wifi connection is now successful
 
  
 
 ## Problems and Solutions
-Problem: after opening serial monitor, arduino appears to freeze and become unresponsive  
+Problem: after opening serial monitor, arduino appears to freeze and become unresponsive
+serial monitor will not load
 
 
 **Solution:**
-
+Close arduino and Press reset button on board
+select board_config.h tab and comment esp_eye and uncomment AI THINKER
+press upload, wait for code to load. select serial monitor from the tools tab, hit reset button on esp32cam and wait for serial monitor to load.
 
 
 ## Final Report
