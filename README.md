@@ -2,7 +2,7 @@
 Project: ESP32 XXXXXXXX
 
 ## Purpose
-Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
+Set up ESP32 access point 
 
 ## Equipment
 * [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
@@ -18,17 +18,16 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 ##### AI GPTs used
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
+1. In arduino select files>examples>ESP32>camera>cameraWebServer
+2. set SSID to ESP32-Cam Access Point
+3. set password to "123456789"
+4. remove lines in setup() and set ESP32 as access point using softAP()
+5. upload the code
+6. open wifi settings and connect to access point
+7. open web browser and type 192.168.4.1
 
 ## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
+none  
 
-**Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
-Camera init failed with error 0x105
-**Solution:**
-
-### Example Problem
-**Problem:** Arduino code will not load on ESP32 Cam.
-**Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
 
 ## Final Report
